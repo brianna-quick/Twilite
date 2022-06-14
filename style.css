@@ -1,0 +1,50 @@
+/* Body */
+body {
+  height: 100%;
+}
+/* Nav Bar */
+.navbar-brand {
+  color: white;
+}
+.navbar {
+  background-color: #19345c !important;
+}
+.nav-link {
+  color: white;
+}
+.btn-primary {
+  background-color: #91b0ff;
+}
+
+/* Carousel */
+
+
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* About Us & FAQ */
+
+#about-container {
+  margin-top: 100px;
+}
+#headshot {
+  width: 100%;
+}
+#faq-image {
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  color: #19345c;
+}
+.footer-icon {
+  width: 24px;
+}
