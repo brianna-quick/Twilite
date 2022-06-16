@@ -3,48 +3,140 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Twilite Real Estate Photography</title>
+    <link href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Twilite</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="our-work.html">Our Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link" href="about-us.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <<a href="book-now.html">
+                <button type="button" class=" book-now-btn btn btn-primary">Book Now</button>
+                </a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
+    <!-- Page Heading -->
+    <h1 class="page-heading" class="my-4">Services
+      <!-- <small>& Pricing</small> -->
+    </h1>
+    <!-- Pricing -->
+    <section class="pricing py-5">
+      <div id="pricing-container" class="container">
+        <div class="row">
+          <!-- Price Card -->
+          <div class="col-lg-4">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Showcase Package</h5>
+                <h6 id="big-price" class="card-price text-center">$125</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>35 Interior/Exterior photos</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain </li>
+                </ul>
+                <div class="d-grid">
+                  <a href="#" class="btn btn-primary text-uppercase">Button</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Additional Services -->
+          <div class="col-lg-8">
+            <ul class="list-group">
+              <li id="add-services" class="list-group-item d-flex justify-content-between align-items-center">
+                Additional Services
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Traditional Twilight
+                <span>+$69</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Virtual Twilight
+                <span>$45</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Social Media Teasers
+                <span>$29</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Headshots for Realtors
+                <span>$50</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Panoramas (aka 360 tours)
+                <span>$175</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                HD Walkthrough Video
+                <span>$150</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Ultra-High Resolution Magazine Quality (12800x7200) interior/exterior photos for prints up to 6ft wide
+                <span>placeholder</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Community Ammenities
+                <span>$29</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Neighborhood Amenities
+                <span>$29</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Same Day Delivery
+                <span>$20</span>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Twilite Real Estate Photography</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="#"><img class="footer-icon" src="images/email.png" alt=""></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><img class="footer-icon" src="images/insta.png" alt=""></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><img class="footer-icon" src="images/facebook.png" alt=""></a></li>
+        </ul>
+      </footer>
+    </div>
+
   </body>
 </html>

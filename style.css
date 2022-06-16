@@ -1,4 +1,8 @@
 /* Body */
+.page-heading {
+  margin-top: 100px;
+  text-align: center;
+}
 body {
   height: 100%;
 }
@@ -12,7 +16,7 @@ body {
 .nav-link {
   color: white;
 }
-.btn-primary {
+.book-now-btn {
   background-color: #91b0ff;
 }
 
@@ -29,16 +33,36 @@ body {
   background-size: cover;
 }
 
+/* Services & Pricing */
+
+#big-price {
+  font-size: 500%;
+}
+#add-services {
+  font-size: 150%;
+  font-weight: bold;
+}
 /* About Us & FAQ */
 
-#about-container {
-  margin-top: 100px;
+.about-top {
+  padding-bottom: 25px;
+  padding-top: 50px;
 }
 #headshot {
   width: 100%;
+  
 }
 #faq-image {
   width: 100%;
+}
+/* #bio {
+  padding: 25px;
+} */
+
+/* Contact & Book Now */
+
+.form-container {
+  margin-top: 50px;
 }
 
 /* Footer */
@@ -48,3 +72,9 @@ footer {
 .footer-icon {
   width: 24px;
 }
+/* Media Queries */
+/* @media screen and (max-width: 575.98px) {
+  footer {
+    align-items: center;
+  }
+} */
