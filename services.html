@@ -15,14 +15,14 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Twilite</a>
+        <a class="navbar-brand" href="index.html">Twilite</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-dark navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="our-work.html">Our Work</a>
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about-us.html">About</a>
@@ -34,8 +34,8 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <<a href="book-now.html">
-                <button type="button" class=" book-now-btn btn btn-primary">Book Now</button>
+              <a href="request-appointment.html">
+                <button type="button" class=" request-appt-btn btn btn-primary">Request Appointment</button>
                 </a>
             </li>
           </ul>
@@ -57,14 +57,14 @@
                 <h5 class="card-title text-muted text-uppercase text-center">Showcase Package</h5>
                 <h6 id="big-price" class="card-price text-center">$125</h6>
                 <hr>
-                <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>35 Interior/Exterior photos</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain </li>
+                <ul id="package-list" class="fa-ul list-unstyled">
+                  <li>35 Interior/Exterior photos</li>
+                  <!-- <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain </li> -->
                 </ul>
-                <div class="d-grid">
+                <!-- <div class="d-grid">
                   <a href="#" class="btn btn-primary text-uppercase">Button</a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -76,11 +76,7 @@
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 Traditional Twilight
-                <span>+$69</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                Virtual Twilight
-                <span>$45</span>
+                <span>$69</span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 Social Media Teasers
@@ -98,7 +94,7 @@
                 HD Walkthrough Video
                 <span>$150</span>
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
+              <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
                 Ultra-High Resolution Magazine Quality (12800x7200) interior/exterior photos for prints up to 6ft wide
                 <span>placeholder</span>
               </li>
@@ -109,10 +105,10 @@
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 Neighborhood Amenities
                 <span>$29</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                Same Day Delivery
-                <span>$20</span>
+              </li> -->
+              <li id="same-day" class="list-group-item d-flex justify-content-between align-items-center">
+                Images can be delivered the same day for an additional $20 fee
+                <!-- <span>$20</span> -->
               </li>
             </ul>
 
@@ -120,6 +116,42 @@
         </div>
       </div>
     </section>
+    <!-- Disclaimers Page Heading -->
+    <h1 id="disclaimer-heading" class="my-4">Disclaimers
+      <!-- <small>& Pricing</small> -->
+    </h1>
+    <!-- Disclaimers -->
+    <div class="container">
+      <div>
+        <h3>Taxes</h3>
+        <p>Prices do not include sales tax.</p>
+      </div>
+      <div>
+        <h3>Cancellation Charges</h3>
+        <p>Cancellations within 24 hours of the appointment will result in a $40 penalty. </p>
+      </div>
+      <div>
+        <h3>Image Usage</h3>
+        <p>All images are copyrighted and are the intellectual property of Twilite Real Estate Photography. The images are licensed to you <span class="emphasis-italic">for use</span>, based on the package you purchase. Twilite Real Estate Photography is committed to protecting the interests, intellectual property rights and livelihood of the company.The real estate agent or client is granted <span class="emphasis-italic">Temporary Usage Rights</span> to use those images until the property is either sold, rented or otherwise goes off the market. If you need to re-use images for more than a single, one-time listing, you will need to purchase permanent usage rights. Once it has been sold, you must purchase permanent usage rights to continue using for your marketing purposes. </p>
+      </div>
+      <div>
+        <h3>IMPORTANT NOTE</h3>
+        <p>Clients should clean and move objects prior to the shoot. If the space isn’t ready by the start of the appointment and rescheduling is necessary, a <span class="emphasis-bold">$40 penalty</span> will be applied.</p>
+      </div>
+      <div>
+        <h3>Rooms by Request Only</h3>
+        <p>The following images are by request only at no extra charge:</p>
+        <ul>
+          <li>Garages</li>
+          <li>Attics</li>
+          <li>Closets/Pantries</li>
+          <li>Mudrooms</li>
+          <li>Unfinished Basements/Crawlspaces</li>
+        </ul>
+        <p>Please note in your order if you would like any of these images taken during the session.</p>
+      </div>
+      
+    </div>
     <!-- Footer -->
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

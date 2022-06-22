@@ -6,9 +6,18 @@
 body {
   height: 100%;
 }
+.page-heading {
+  color: #19345c;
+}
+
+
 /* Nav Bar */
 .navbar-brand {
   color: white;
+
+}
+.navbar-brand:hover {
+  color: #91b0ff;
 }
 .navbar {
   background-color: #19345c !important;
@@ -16,13 +25,16 @@ body {
 .nav-link {
   color: white;
 }
-.book-now-btn {
+.nav-link:hover {
+  color: #91b0ff;
+}
+.request-appt-btn {
   background-color: #91b0ff;
 }
 
+/* Home Page */
+
 /* Carousel */
-
-
 .carousel-item {
   height: 65vh;
   min-height: 350px;
@@ -32,25 +44,123 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+.carousel-img {
+  width: 100vw;
+}
+.carousel-inner {
+  height: 500px;
+}
+
+/* Cards */
+.card {
+  margin-top: 40px;
+}
+
 
 /* Services & Pricing */
-
 #big-price {
   font-size: 500%;
+}
+#package-list {
+  text-align: center;
 }
 #add-services {
   font-size: 150%;
   font-weight: bold;
 }
-/* About Us & FAQ */
+#same-day {
+  font-style: italic;
+}
+#disclaimer-heading {
+  text-align: center;
+}
+.emphasis-italic {
+  font-weight: bold;
+  font-style: italic;
+}
+.emphasis-bold {
+  font-weight: bold;
+}
 
+/* Portfolio */
+
+.gallery-img {
+  width: 25vw;
+  padding: 5px;
+  
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #bbb;
+}
+
+.italic { 
+  font-style: italic; 
+}
+
+.small { 
+  font-size: 0.8em; 
+}
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.gallery-row {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* About Us & FAQ */
 .about-top {
-  padding-bottom: 25px;
-  padding-top: 50px;
+  padding: 25px 5px 0px 5px;
+
 }
 #headshot {
-  width: 100%;
-  
+  width: 35%;
+  float: right;
+  padding-left: 50px;
+}
+#faq-heading {
+  text-align: center;
+  color: #19345c;
 }
 #faq-image {
   width: 100%;
@@ -59,11 +169,23 @@ body {
   padding: 25px;
 } */
 
-/* Contact & Book Now */
-
+/* Contact & Request Appointment */
 .form-container {
   margin-top: 50px;
 }
+.form-box {
+  margin-bottom: 25px;
+}
+#service-map {
+  width: 100%;
+}
+#contact-list {
+  list-style: none;
+}
+#contact-container {
+  margin-top: 50px;
+}
+
 
 /* Footer */
 footer {
@@ -73,8 +195,13 @@ footer {
   width: 24px;
 }
 /* Media Queries */
-/* @media screen and (max-width: 575.98px) {
-  footer {
-    align-items: center;
+@media screen and (max-width: 575.98px) {
+  
+  #headshot {
+    width: 100%;
+    padding-left: 0;
+    padding: 25px;
+    padding-bottom: 50px;
   }
-} */
+  
+}
