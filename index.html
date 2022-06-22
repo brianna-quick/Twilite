@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6b911da5fd.js" crossorigin="anonymous"></script>
     
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -52,14 +53,19 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="carousel-img" src="images/bed-feature.jpg" class="d-block w-100" alt="...">
+          <picture>
+            <source media="(min-width:775px)" srcset="images/bed-feature.jpg">
+            <source media="(min-width:375px)" srcset="images/bed-1.jpeg">
+            <img class="carousel-img d-block w-100" src="images/bed-1.jpeg" alt="Flowers" style="width:auto;">
+          </picture>
           <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="carousel-img" src="images/kitchen-feature.jpg" class="d-block w-100" alt="...">
+          
+          <img class="carousel-img" srcset="images/kitchen-1.jpeg, images/kitchen-feature.jpg" sizes="(max-width: 575px) 480px, 1200px"src="images/kitchen-feature.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Some representative placeholder content for the second slide.</p>
@@ -84,60 +90,98 @@
     </div>
 
     <!-- Home Page Blurb -->
-    
-    <!-- Cards -->
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Need to see some examples?</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="portfolio.html" class="btn btn-primary">Portfolio</a>
-            </div>
+    <div class="container-fluid px-4 py-5 my-5 text-center">
+      <div class="lc-block">
+        <div editable="rich">
+          <h2 class="display-5 fw-bold">Welcome to Twilite</h2>
+        </div>
+      </div>
+      <div class="lc-block col-lg-6 mx-auto mb-4">
+        <div editable="rich">
+          <p class="lead ">Twilite Real Estate Photography provides you with the tools you need to sell your listings and build your business. Properties listed with professional photos sell faster and for more money. You will receive beautiful images that are delivered in a timely manner and emphasize the features you want to highlight. </p>
+        </div>
+      </div>
+      <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center"> 
+        <a class="btn btn-outline-secondary btn-lg px-4" href="#" role="button">Twilite FAQs</a>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="container px-4 py-5" id="hanging-icons">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <img class="feat-icon" src="icons/person-fill.svg" alt="">
+          </div>
+          <div>
+            <h2>Featured title</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <a href="#" class="btn btn-primary">
+              Primary button
+            </a>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Learn more about Twilite's services.</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="services.html" class="btn btn-primary">Services</a>
-            </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <img class="feat-icon" src="icons/card-list.svg" alt="">
+          </div>
+          <div>
+            <h2>Featured title</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <a href="#" class="btn btn-primary">
+              Primary button
+            </a>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Ready to book a session?</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="book-now.html" class="btn btn-primary">Request an Appointment</a>
-            </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <img class="feat-icon" src="icons/images.svg" alt="">
+          </div>
+          <div>
+            <h2>Featured title</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <a href="#" class="btn btn-primary">
+              Primary button
+            </a>
           </div>
         </div>
       </div>
     </div>
-
+  
     <!-- Footer -->
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Twilite Real Estate Photography</span>
-        </div>
-    
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="#"><img class="footer-icon" src="images/email.png" alt=""></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><img class="footer-icon" src="images/insta.png" alt=""></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><img class="footer-icon" src="images/facebook.png" alt=""></a></li>
-        </ul>
-      </footer>
-    </div>
-    
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+
+
+  <footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="footer-icon btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="fa-brands fa-facebook-square"></i>
+      </a>
+      <!-- Instagram -->
+      <a class="footer-icon btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="fa-brands fa-instagram-square"></i>
+      </a>
+      <!-- Email -->
+      <a class="footer-icon btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="fa-solid fa-envelope"></i>
+        
+      </a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white">Twilite Real Estate Photography</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
   </body>
 </html>
