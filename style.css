@@ -1,7 +1,24 @@
+/* Fonts */
+@font-face {
+  font-family: 'Ampero'; 
+  src: url('fonts/ampero/Ampero-Bold.otf'); 
+}
+@font-face {
+  font-family: 'Navine'; 
+  src: url('fonts/navine/NavineDemo-SemiCondensed.ttf'); 
+}
+@font-face {
+  font-family: 'Navine-Italic'; 
+  src: url('fonts/navine/NavineDemo-SemiCondensed\ Italic.ttf'); 
+}
+
+
 /* Body */
 .page-heading {
   margin-top: 100px;
   text-align: center;
+  font-family: 'Ampero';
+  font-size: 400%;
 }
 body {
   height: 100%;
@@ -9,9 +26,16 @@ body {
 .page-heading {
   color: #19345c;
 }
+p {
+  font-family: 'Navine';
+  color: #19345c;
+}
 
 
 /* Nav Bar */
+#logo {
+  width: 50px;
+}
 .navbar-brand {
   color: white;
 
@@ -24,12 +48,20 @@ body {
 }
 .nav-link {
   color: white;
+  font-family: 'Navine';
 }
 .nav-link:hover {
   color: #91b0ff;
 }
 .request-appt-btn {
+  font-family: 'Navine';
   background-color: #91b0ff;
+  color: #19345c;
+}
+.request-appt-btn:hover {
+  color: #19345c;
+  background-color: white;
+  border-color: white;
 }
 
 /* Home Page */
@@ -50,12 +82,49 @@ body {
 .carousel-inner {
   height: 500px;
 }
+#slide-label-1 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'Ampero';
+}
+#slide-label-2 {
+  color: #19345c;
+  font-family: 'Ampero';
+}
+#slide-label-3 {
+  color: #19345c;
+  text-align: left;
+  font-family: 'Ampero';
+}
+
+/* Home Header */
+#home-header {
+  background-color: #19345c;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  font-size: 400%;
+  font-family: 'Ampero';
+  color: white;
+}
+.home-blurb {
+  margin-top: 25px;
+  
+}
+.blurb-box {
+  background-color: rgba(145, 176, 255, .5);
+}
+.blurb-btn {
+  padding-bottom: 25px;
+}
+
 
 /* Features Section */
+.feat-title {
+  color: #19345c;
+}
 .feature-icon {
-  width: 4rem;
-  height: 4rem;
   border-radius: .75rem;
+  color: #19345c;
 }
 
 .icon-link > .bi {
@@ -85,6 +154,9 @@ body {
 }
 .feat-icon {
   width: 2rem;
+}
+.feature-btn {
+  background-color: #19345c;
 }
 
 
@@ -116,9 +188,14 @@ body {
 /* Portfolio */
 
 .gallery-img {
-  width: 25vw;
+  width: 100%;
   padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   
+}
+.lightbox {
+  margin-top: 60px;
 }
 
 a {
@@ -192,6 +269,16 @@ a:hover {
 #faq-heading {
   text-align: center;
   color: #19345c;
+  font-family: 'Navine';
+}
+.accordion-header {
+  font-family: 'Navine';
+  font-weight: bold;
+  color: #19345c;
+}
+.accordion-body {
+  font-family: 'Navine-Italic';
+  color: #19345c;
 }
 #faq-image {
   width: 100%;
@@ -200,7 +287,7 @@ a:hover {
   padding: 25px;
 } */
 
-/* Contact & Request Appointment */
+/* Contact */
 .form-container {
   margin-top: 50px;
 }
@@ -210,21 +297,45 @@ a:hover {
 #service-map {
   width: 100%;
 }
-#contact-list {
+
+#contact-methods {
   list-style: none;
 }
 #contact-container {
   margin-top: 50px;
 }
+.contact-icon {
+  width: 24px;
+}
+.contact-list {
+  display: inline-flex;
+  align-items: flex-start;
+}
+.method-name {
+  padding-left: 15px;
+}
+
+/* Request Appointment */
+#request-img {
+  width: 100%;
+}
+
 
 
 /* Footer */
 footer {
   color: #19345c;
+  margin-top: 50px;
+  font-family: 'Navine';
 }
 .footer-icon {
   border: none;
-  
+}
+i {
+  font-size: x-large;
+}
+.text-white {
+  text-decoration: none;
 }
 
 /* Media Queries */
@@ -239,6 +350,54 @@ footer {
   .carousel-inner {
     height: 230px;
   }
+
+  .gallery-img {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .img-container {
+    width: auto;
+  }
+  .gallery-row {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .contact-box {
+    width: 100%;
+  }
+  .contact-list {
+    display: flex;
+  }
   
+  #contact-methods {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    padding-left: 5px;
+  }
+  #home-header {
+    font-size: 300%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
   
+}
+
+
+@media screen and (min-width: 575.99px) {
+  .contact-box {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1198px) {
+  .contact-box {
+    width: 50%;
+  }
+  .contact-list {
+    display: flex;
+  }
 }

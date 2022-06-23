@@ -11,12 +11,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    
+    <script src="https://kit.fontawesome.com/6b911da5fd.js" crossorigin="anonymous"></script>
     
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Twilite</a>
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="images/twilite-logo-white.png" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-dark navbar-toggler-icon"></span>
         </button>
@@ -36,7 +38,7 @@
             </li>
             <li class="nav-item">
               <a href="request-appointment.html">
-                <button type="button" class=" request-appt-btn btn btn-primary">Request Appointment</button>
+                <button type="button" class=" request-appt-btn btn">Request Appointment</button>
                 </a>
             </li>
           </ul>
@@ -47,134 +49,74 @@
     <h1 class="page-heading" class="my-4">Portfolio
       <!-- <small>& Pricing</small> -->
     </h1>
+
     <!-- Gallery -->
-    
     <div class="container">
       <div class="gallery-row row">
-        <div class="col-4">
+        <div class="img-container col-6">
           <!-- thumbnail image wrapped in a link -->
           <a href="#img1">
-            <img class="gallery-img" src="https://picsum.photos/seed/9/500/300">
+            <img class="gallery-img" src="images/bath-1.jpeg">
           </a>
           <!-- lightbox container hidden with CSS -->
           <a href="#" class="lightbox" id="img1">
-            <span style="background-image: url('https://picsum.photos/seed/9/900/450')"></span>
+            <span style="background-image: url(images/bath-1.jpeg)"></span>
           </a>
         </div>
-        <div class="col-4">
+        <div class="img-container col-6">
           <!-- thumbnail image wrapped in a link -->
-          <a href="#img1">
-            <img class="gallery-img" src="https://picsum.photos/seed/9/500/300">
+          <a href="#img2">
+            <img class="gallery-img" src="images/couch-1.jpg">
           </a>
           <!-- lightbox container hidden with CSS -->
-          <a href="#" class="lightbox" id="img1">
-            <span style="background-image: url('https://picsum.photos/seed/9/900/450')"></span>
+          <a href="#" class="lightbox" id="img2">
+            <span style="background-image: url(images/couch-1.jpg)"></span>
           </a>
         </div>
-        <div class="col-4">
+    
+      </div>
+      <div class="gallery-row row">
+        <div class="img-container col-6">
           <!-- thumbnail image wrapped in a link -->
-          <a href="#img1">
-            <img class="gallery-img" src="https://picsum.photos/seed/9/500/300">
+          <a href="#img3">
+            <img class="gallery-img" src="images/bed-1.jpeg">
           </a>
           <!-- lightbox container hidden with CSS -->
-          <a href="#" class="lightbox" id="img1">
-            <span style="background-image: url('https://picsum.photos/seed/9/900/450')"></span>
+          <a href="#" class="lightbox" id="img3">
+            <span style="background-image: url(images/bed-1.jpeg)"></span>
+          </a>
+        </div>
+        <div class="img-container col-6">
+          <!-- thumbnail image wrapped in a link -->
+          <a href="#img4">
+            <img class="gallery-img" src="images/bath-2.jpeg">
+          </a>
+          <!-- lightbox container hidden with CSS -->
+          <a href="#" class="lightbox" id="img4">
+            <span style="background-image: url(images/bath-2.jpeg)"></span>
           </a>
         </div>
       </div>
       <div class="gallery-row row">
-        <div class="col-4">
+
+        <div class="img-container col-6">
           <!-- thumbnail image wrapped in a link -->
-          <a href="#img1">
-            <img class="gallery-img" src="https://picsum.photos/seed/9/500/300">
+          <a href="#img5">
+            <img class="gallery-img" src="images/kitchen-1.jpeg">
           </a>
           <!-- lightbox container hidden with CSS -->
-          <a href="#" class="lightbox" id="img1">
-            <span style="background-image: url('https://picsum.photos/seed/9/900/450')"></span>
+          <a href="#" class="lightbox" id="img5">
+            <span style="background-image: url(images/kitchen-1.jpeg)"></span>
           </a>
         </div>
-        <div class="col-4">
+        <div class="img-container col-6">
           <!-- thumbnail image wrapped in a link -->
-          <a href="#img1">
-            <img class="gallery-img" src="https://picsum.photos/seed/9/500/300">
+          <a href="#img6">
+            <img class="gallery-img" src="images/living-room-1.jpeg">
           </a>
           <!-- lightbox container hidden with CSS -->
-          <a href="#" class="lightbox" id="img1">
-            <span style="background-image: url('https://picsum.photos/seed/9/900/450')"></span>
-          </a>
-        </div>
-        <div class="col-4">
-          <!-- thumbnail image wrapped in a link -->
-          <a href="#img1">
-            <img class="gallery-img" src="https://picsum.photos/seed/9/500/300">
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#" class="lightbox" id="img1">
-            <span style="background-image: url('https://picsum.photos/seed/9/900/450')"></span>
-          </a>
-        </div>
-      </div>
-      <div class="gallery-row row">
-        <div class="col-4">
-          <!-- thumbnail image wrapped in a link -->
-          <a href="#img1">
-            <img class="gallery-img" src="https://picsum.photos/seed/9/500/300">
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#" class="lightbox" id="img1">
-            <span style="background-image: url('https://picsum.photos/seed/9/900/450')"></span>
-          </a>
-        </div>
-        <div class="col-4">
-          <!-- thumbnail image wrapped in a link -->
-          <a href="#img1">
-            <img class="gallery-img" src="https://picsum.photos/seed/9/500/300">
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#" class="lightbox" id="img1">
-            <span style="background-image: url('https://picsum.photos/seed/9/900/450')"></span>
-          </a>
-        </div>
-        <div class="col-4">
-          <!-- thumbnail image wrapped in a link -->
-          <a href="#img1">
-            <img class="gallery-img" src="https://picsum.photos/seed/9/500/300">
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#" class="lightbox" id="img1">
-            <span style="background-image: url('https://picsum.photos/seed/9/900/450')"></span>
-          </a>
-        </div>
-      </div>
-      <div class="gallery-row row">
-        <div class="col-4">
-          <!-- thumbnail image wrapped in a link -->
-          <a href="#img1">
-            <img class="gallery-img" src="https://picsum.photos/seed/9/500/300">
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#" class="lightbox" id="img1">
-            <span style="background-image: url('https://picsum.photos/seed/9/900/450')"></span>
-          </a>
-        </div>
-        <div class="col-4">
-          <!-- thumbnail image wrapped in a link -->
-          <a href="#img1">
-            <img class="gallery-img" src="https://picsum.photos/seed/9/500/300">
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#" class="lightbox" id="img1">
-            <span style="background-image: url('https://picsum.photos/seed/9/900/450')"></span>
-          </a>
-        </div>
-        <div class="col-4">
-          <!-- thumbnail image wrapped in a link -->
-          <a href="#img1">
-            <img class="gallery-img" src="https://picsum.photos/seed/9/500/300">
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#" class="lightbox" id="img1">
-            <span style="background-image: url('https://picsum.photos/seed/9/900/450')"></span>
+          <a href="#" class="lightbox" id="img6">
+            <span style="background-image: url(images/living-room-1.jpeg)"></span>
           </a>
         </div>
       </div>
@@ -183,22 +125,34 @@
     
 
     <!-- Footer -->
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="footer-icon btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fa-brands fa-facebook-square"></i>
           </a>
-          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Twilite Real Estate Photography</span>
-        </div>
-    
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="#"><img class="footer-icon" src="images/email.png" alt=""></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><img class="footer-icon" src="images/insta.png" alt=""></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><img class="footer-icon" src="images/facebook.png" alt=""></a></li>
-        </ul>
+          <!-- Instagram -->
+          <a class="footer-icon btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <!-- Email -->
+          <a class="footer-icon btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fab fa-solid fa-envelope"></i>
+          </a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020
+        <a class="text-white">Twilite Real Estate Photography</a>
+      </div>
+      <!-- Copyright -->
       </footer>
-    </div>
 
   </body>
 </html>
