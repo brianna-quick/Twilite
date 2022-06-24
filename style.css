@@ -55,6 +55,9 @@ p {
 .nav-link:hover {
   color: #91b0ff;
 }
+.nav-link:active {
+  text-decoration: underline;
+}
 .request-appt-btn {
   font-family: 'Navine';
   background-color: #91b0ff;
@@ -385,10 +388,14 @@ a:hover {
 
 /* Footer */
 footer {
-  color: #19345c;
+  
   margin-top: 50px;
   font-family: 'Navine';
 }
+.bg-dark {
+  background-color: rgba(25, 52, 92, 1);
+}
+
 .footer-icon {
   border: none;
 }
@@ -397,6 +404,18 @@ i {
 }
 .text-white {
   text-decoration: none;
+}
+#footer-top {
+  margin-left: 0;
+  padding-right: 50px;
+  background-color: rgba(25, 52, 92, 1);
+
+}
+#footer-bottom {
+  background-color: rgba(25, 52, 92, 0.5);
+} 
+#footer-social {
+  padding-bottom: 25px;
 }
 
 /* Media Queries */
