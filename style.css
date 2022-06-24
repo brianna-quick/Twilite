@@ -34,7 +34,7 @@ p {
 
 /* Nav Bar */
 #logo {
-  width: 50px;
+  height: 35px;
 }
 .navbar-brand {
   color: white;
@@ -115,6 +115,13 @@ p {
 }
 .blurb-btn {
   padding-bottom: 25px;
+  
+}
+.btn-outline-secondary {
+  color: #19345c;
+}
+.btn-outline-secondary:hover {
+  background-color: #19345c;
 }
 
 
@@ -162,10 +169,16 @@ p {
 
 /* Services & Pricing */
 #big-price {
-  font-size: 500%;
+  margin-top: 25px;
+  font-size: 700%;
+  font-family: 'Ampero';
+  color: #19345c;
 }
 #package-list {
+  margin: 0;
   text-align: center;
+  font-family: 'Navine';
+  color: #19345c;
 }
 #add-services {
   font-size: 150%;
@@ -183,6 +196,28 @@ p {
 }
 .emphasis-bold {
   font-weight: bold;
+}
+#add-services {
+  font-family: 'Ampero';
+  color: #19345c;
+}
+.list-group-item {
+  font-family: 'Navine';
+  color: #19345c;
+}
+
+/* Disclaimers */
+#disclaimer-heading {
+  font-family: 'Navine';
+  color: #19345c;
+}
+.dis-sub {
+  font-family: 'Ampero';
+  color: #19345c;
+}
+.extra-room {
+  font-family: 'Navine';
+  color: #19345c;
 }
 
 /* Portfolio */
@@ -300,9 +335,10 @@ a:hover {
 
 #contact-methods {
   list-style: none;
+  
 }
 #contact-container {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 .contact-icon {
   width: 24px;
@@ -383,14 +419,32 @@ i {
     padding-top: 20px;
     padding-bottom: 15px;
   }
+  .page-heading {
+    font-size: 300%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
   
 }
 
+@media screen and (max-width: 375px) {
+  .method-name {
+    font-size: 12px;
+
+  }
+  .contact-icon {
+    width: 18px;
+  }
+}
 
 @media screen and (min-width: 575.99px) {
   .contact-box {
     width: 50%;
   }
+  #contact-methods {
+    padding-left: 0;
+  }
+  
 }
 
 @media screen and (min-width: 1198px) {
@@ -400,4 +454,8 @@ i {
   .contact-list {
     display: flex;
   }
+  #contact-methods {
+    margin-top: 30px;
+  }
+
 }
