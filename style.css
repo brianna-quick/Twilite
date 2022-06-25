@@ -383,6 +383,12 @@ a:hover {
 #request-img {
   width: 100%;
 }
+#appt-head {
+  font-size: x-large;
+}
+#appt-text {
+  font-size: medium;
+}
 
 
 
