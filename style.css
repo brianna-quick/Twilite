@@ -111,8 +111,8 @@ p {
   padding-bottom: 12px;
   padding-right: 20px;
   position: relative;
-  bottom: 130px;
-  left: 575px;
+  top: 130px;
+  right: 75px;
   width: 380px;
 }
 #slide-label-3 {
@@ -228,9 +228,7 @@ p {
 #same-day {
   font-style: italic;
 }
-#disclaimer-heading {
-  text-align: center;
-}
+
 .emphasis-italic {
   font-weight: bold;
   font-style: italic;
@@ -246,11 +244,25 @@ p {
   font-family: 'Navine';
   color: #19345c;
 }
+#all-img {
+  margin-top: 25px;
+}
+#cloudy {
+  margin-top: 25px;
+  font-size: 150%;
+}
+.pricing {
+  padding-bottom: 0;
+}
 
 /* Disclaimers */
 #disclaimer-heading {
   font-family: 'Navine';
-  color: #19345c;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  text-align: center;
+  background-color: #19345c;
 }
 .dis-sub {
   font-family: 'Ampero';
