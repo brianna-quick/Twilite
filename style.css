@@ -55,9 +55,7 @@ p {
 .nav-link:hover {
   color: #91b0ff;
 }
-.nav-link:active {
-  text-decoration: underline;
-}
+
 .request-appt-btn {
   font-family: 'Navine';
   background-color: #91b0ff;
@@ -100,7 +98,6 @@ p {
   top: 120px;
   left: 540px;
   width: 420px;
-  
 }
 #slide-label-2 {
   color: white;
@@ -141,14 +138,12 @@ p {
 }
 .home-blurb {
   margin-top: 25px;
-  
 }
 .blurb-box {
   background-color: rgba(145, 176, 255, .5);
 }
 .blurb-btn {
   padding-bottom: 25px;
-  
 }
 .btn-outline-secondary {
   color: #19345c;
@@ -168,7 +163,6 @@ p {
   border-radius: .75rem;
   color: #19345c;
 }
-
 .icon-link > .bi {
   margin-top: .125rem;
   margin-left: .125rem;
@@ -178,17 +172,20 @@ p {
 .icon-link:hover > .bi {
   transform: translate(.25rem);
 }
-
 .icon-square {
   width: 3rem;
   height: 3rem;
   border-radius: .75rem;
 }
-
-.text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
-.text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
-.text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
-
+.text-shadow-1 { 
+  text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); 
+}
+.text-shadow-2 { 
+  text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); 
+}
+.text-shadow-3 { 
+  text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); 
+}
 .card-cover {
   background-repeat: no-repeat;
   background-position: center center;
@@ -228,7 +225,6 @@ p {
 #same-day {
   font-style: italic;
 }
-
 .emphasis-italic {
   font-weight: bold;
   font-style: italic;
@@ -274,7 +270,6 @@ p {
 }
 
 /* Portfolio */
-
 .gallery-img {
   width: 100%;
   padding: 5px;
@@ -285,29 +280,22 @@ p {
 .lightbox {
   margin-top: 60px;
 }
-
 a {
   color: inherit;
 }
-
 a:hover {
   color: #bbb;
 }
-
 .italic { 
   font-style: italic; 
 }
-
 .small { 
   font-size: 0.8em; 
 }
-
 /** LIGHTBOX MARKUP **/
-
 .lightbox {
   /* Default to hidden */
   display: none;
-
   /* Overlay entire screen */
   position: fixed;
   z-index: 999;
@@ -315,25 +303,20 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  
   /* A bit of padding around image */
   padding: 1em;
-
   /* Translucent background */
   background: rgba(0, 0, 0, 0.8);
 }
-
 /* Unhide the lightbox when it's the target */
 .lightbox:target {
   display: block;
 }
-
 .lightbox span {
   /* Full width and height */
   display: block;
   width: 100%;
   height: 100%;
-
   /* Size and position background image */
   background-position: center;
   background-repeat: no-repeat;
@@ -347,7 +330,6 @@ a:hover {
 /* About Us & FAQ */
 .about-top {
   padding: 25px 5px 0px 5px;
-
 }
 #headshot {
   width: 35%;
@@ -355,8 +337,6 @@ a:hover {
   padding-left: 50px;
   padding-top: 10px;
   padding-right: 10px;
-  
-  
 }
 #faq-heading {
   text-align: center;
@@ -406,10 +386,8 @@ a:hover {
 #service-map {
   width: 100%;
 }
-
 #contact-methods {
   list-style: none;
-  
 }
 #contact-container {
   margin-top: 25px;
@@ -437,17 +415,14 @@ a:hover {
 }
 
 
-
 /* Footer */
 footer {
-  
   margin-top: 50px;
   font-family: 'Navine';
 }
 .bg-dark {
   background-color: rgba(25, 52, 92, 1);
 }
-
 .footer-icon {
   border: none;
 }
@@ -461,7 +436,6 @@ i {
   margin-left: 0;
   padding-right: 50px;
   background-color: rgba(25, 52, 92, 1);
-
 }
 #footer-bottom {
   background-color: rgba(25, 52, 92, 0.5);
@@ -483,7 +457,6 @@ i {
   .carousel-inner {
     height: 230px;
   }
-
   .gallery-img {
     width: 100%;
     margin-top: 5px;
@@ -503,7 +476,6 @@ i {
   .contact-list {
     display: flex;
   }
-  
   #contact-methods {
     margin-top: 25px;
     margin-left: auto;
@@ -539,13 +511,11 @@ i {
     padding-left: 15px;
     padding-right: 15px;
   }
-  
 }
 
 @media screen and (max-width: 375px) {
   .method-name {
     font-size: 12px;
-
   }
   .contact-icon {
     width: 18px;
@@ -566,7 +536,6 @@ i {
     padding-left: 25px;
     padding-right: 25px;
   }
-  
 }
 
 @media screen and (min-width: 1198px) {
@@ -579,5 +548,4 @@ i {
   #contact-methods {
     margin-top: 30px;
   }
-
 }
