@@ -539,7 +539,18 @@ i {
     display: flex;
   }
   #contact-methods {
-    margin-top: 30px;
+    margin-top: 22px;
     padding-left: 15px;
+  }
+  .contact-icon {
+    width: 28px;
+  }
+  .method-name {
+    font-size: 125%;
+    padding-left: 20px;
+  }
+  .email-icon {
+    position: relative;
+    top: 5px;
   }
 }
