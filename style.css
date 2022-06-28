@@ -12,7 +12,6 @@
   src: url('fonts/navine/NavineDemo-SemiCondensed\ Italic.ttf'); 
 }
 
-
 /* Body */
 .page-heading {
   margin-top: 50px;
@@ -27,12 +26,10 @@
 body {
   height: 100%;
 }
-
 p {
   font-family: 'Navine';
   color: #19345c;
 }
-
 
 /* Nav Bar */
 #logo {
@@ -40,7 +37,6 @@ p {
 }
 .navbar-brand {
   color: white;
-
 }
 .navbar-brand:hover {
   color: #91b0ff;
@@ -55,7 +51,9 @@ p {
 .nav-link:hover {
   color: #91b0ff;
 }
-
+.nav-link:focus{
+  color: white !important;
+}
 .request-appt-btn {
   font-family: 'Navine';
   background-color: #91b0ff;
@@ -70,7 +68,6 @@ p {
 /* Home Page */
 
 /* Carousel */
-
 .carousel-item {
   height: 65vh;
   min-height: 350px;
@@ -153,7 +150,6 @@ p {
   background-color: #19345c;
 }
 
-
 /* Features Section */
 .feat-title {
   color: #19345c;
@@ -203,7 +199,6 @@ p {
   background-color: #91b0ff;
   color: #19345c;
 }
-
 
 /* Services & Pricing */
 #big-price {
@@ -275,7 +270,6 @@ p {
   padding: 5px;
   margin-left: 5px;
   margin-right: 5px;
-  
 }
 .lightbox {
   margin-top: 60px;
@@ -401,6 +395,7 @@ a:hover {
 }
 .method-name {
   padding-left: 15px;
+  align-items: center;
 }
 
 /* Request Appointment */
@@ -413,7 +408,6 @@ a:hover {
 #appt-text {
   font-size: medium;
 }
-
 
 /* Footer */
 footer {
@@ -446,7 +440,6 @@ i {
 
 /* Media Queries */
 @media screen and (max-width: 575.98px) {
-  
   #headshot {
     width: 100%;
     padding-top: 25px;
@@ -547,5 +540,6 @@ i {
   }
   #contact-methods {
     margin-top: 30px;
+    padding-left: 15px;
   }
 }
