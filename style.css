@@ -30,7 +30,9 @@ p {
   font-family: 'Navine';
   color: #19345c;
 }
-
+main {
+  min-height: calc(100vh - 212px);
+}
 /* Nav Bar */
 #logo {
   height: 35px;
@@ -43,6 +45,7 @@ p {
 }
 .navbar {
   background-color: #19345c !important;
+  height: 60px;
 }
 .nav-link {
   color: white;
@@ -425,6 +428,7 @@ a:hover {
 
 /* Footer */
 footer {
+  height: 152px;
   margin-top: 50px;
   font-family: 'Navine';
 }
