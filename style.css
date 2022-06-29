@@ -103,20 +103,20 @@ p {
   padding-bottom: 12px;
   padding-right: 20px;
   position: relative;
-  top: 120px;
+  bottom: 120px;
   left: 540px;
   width: 420px;
 }
 #slide-label-2 {
   color: white;
-  background-color: rgba(25, 52, 92, .8);
+  background-color: rgba(25, 52, 92, .85);
   font-size: 2.5rem;
   font-family: 'Ampero';
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 20px;
   position: relative;
-  top: 130px;
+  bottom: 130px;
   right: 75px;
   width: 380px;
 }
@@ -477,6 +477,9 @@ i {
     margin: 0;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+  .contact {
+    padding-left: 10px;
   }
   .contact-box {
     width: 100%;
