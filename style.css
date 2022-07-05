@@ -589,3 +589,21 @@ i {
     top: 5px;
   }
 }
+@media screen and (max-width: 999px) {
+  .navbar-collapse {
+    background-color: #19345c;
+    padding: 0px 10px 10px 10px;
+  }
+  #slide-label-1 {
+    position: relative;
+    left: 380px;
+  }
+  #slide-label-2 {
+    position: relative;
+    bottom: 130px;
+  }
+  #slide-label-3 {
+    position: relative;
+    bottom: 95px;
+  }
+}
