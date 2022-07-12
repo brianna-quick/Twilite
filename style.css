@@ -606,4 +606,11 @@ i {
     position: relative;
     bottom: 95px;
   }
+  
+  #about-container {
+    padding-left: 22px;
+  }
+  .pricing {
+    padding-left: 10px;
+  }
 }
